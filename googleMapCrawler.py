@@ -32,7 +32,7 @@ if __name__=="__main__":
 	with open(path_to_file,"rU") as csv_file:
 		print csv_file.name
 		loc = read_gps(csv_file,loc=[])
-	api_key = "AIzaSyDOFEx_RX1k9Dt1Fu82GT9QZQ6bDAv1qX0";
+	api_key = "Your API Key goes here";
 	for item in loc:
 		GetStaticMap(str(item),"loc[item]",12,(500,500),"png",api_key)
 	
